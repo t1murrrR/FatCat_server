@@ -1,0 +1,17 @@
+CREATE TABLE IF NOT EXISTS messages
+(
+    id   VARCHAR(60) PRIMARY KEY,
+    text VARCHAR NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS users
+(
+    id       INTEGER PRIMARY KEY auto_increment,
+    username VARCHAR NOT NULL,
+    password VARCHAR NOT NULL,
+    email    VARCHAR NOT NULL,
+    coins    INTEGER NOT NULL,
+    role     VARCHAR NOT NULL
+);
+
+--CREATE SEQUENCE USERS_SEQ START WITH 1 INCREMENT BY 1;
